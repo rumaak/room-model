@@ -1,0 +1,14 @@
+Configuring fast-logger-2.4.10...
+Building fast-logger-2.4.10...
+Preprocessing library fast-logger-2.4.10...
+[1 of 8] Compiling System.Log.FastLogger.LogStr ( System\Log\FastLogger\LogStr.hs, .stack-work\dist\5f9bc736\build\System\Log\FastLogger\LogStr.o )
+[2 of 8] Compiling System.Log.FastLogger.IORef ( System\Log\FastLogger\IORef.hs, .stack-work\dist\5f9bc736\build\System\Log\FastLogger\IORef.o )
+[3 of 8] Compiling System.Log.FastLogger.IO ( System\Log\FastLogger\IO.hs, .stack-work\dist\5f9bc736\build\System\Log\FastLogger\IO.o )
+[4 of 8] Compiling System.Log.FastLogger.FileIO ( System\Log\FastLogger\FileIO.hs, .stack-work\dist\5f9bc736\build\System\Log\FastLogger\FileIO.o )
+[5 of 8] Compiling System.Log.FastLogger.Logger ( System\Log\FastLogger\Logger.hs, .stack-work\dist\5f9bc736\build\System\Log\FastLogger\Logger.o )
+[6 of 8] Compiling System.Log.FastLogger.File ( System\Log\FastLogger\File.hs, .stack-work\dist\5f9bc736\build\System\Log\FastLogger\File.o )
+[7 of 8] Compiling System.Log.FastLogger.Date ( System\Log\FastLogger\Date.hs, .stack-work\dist\5f9bc736\build\System\Log\FastLogger\Date.o )
+[8 of 8] Compiling System.Log.FastLogger ( System\Log\FastLogger.hs, .stack-work\dist\5f9bc736\build\System\Log\FastLogger.o )
+Installing library in
+C:\sr\snapshots\9b49e9f1\lib\i386-windows-ghc-8.0.2\fast-logger-2.4.10-ISntn3wtmf3KaztHeg0TP4
+Registering fast-logger-2.4.10...

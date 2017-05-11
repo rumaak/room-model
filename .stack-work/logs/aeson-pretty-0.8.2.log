@@ -1,0 +1,31 @@
+Configuring aeson-pretty-0.8.2...
+Building aeson-pretty-0.8.2...
+Preprocessing library aeson-pretty-0.8.2...
+[1 of 1] Compiling Data.Aeson.Encode.Pretty ( Data\Aeson\Encode\Pretty.hs, .stack-work\dist\5f9bc736\build\Data\Aeson\Encode\Pretty.o )
+
+Data\Aeson\Encode\Pretty.hs:58:1: warning: [-Wdeprecations]
+    Module `Data.Aeson.Encode' is deprecated:
+      Use Data.Aeson or Data.Aeson.Text instead
+
+Data\Aeson\Encode\Pretty.hs:172:21: warning: [-Wdeprecations]
+    In the use of `encodeToTextBuilder'
+    (imported from Data.Aeson.Encode):
+    Deprecated: "Use Data.Aeson or Data.Aeson.Text instead"
+
+Data\Aeson\Encode\Pretty.hs:193:3: warning: [-Wdeprecations]
+    In the use of `encodeToTextBuilder'
+    (imported from Data.Aeson.Encode):
+    Deprecated: "Use Data.Aeson or Data.Aeson.Text instead"
+
+Data\Aeson\Encode\Pretty.hs:200:17: warning: [-Wdeprecations]
+    In the use of `encodeToTextBuilder'
+    (imported from Data.Aeson.Encode):
+    Deprecated: "Use Data.Aeson or Data.Aeson.Text instead"
+Preprocessing executable 'aeson-pretty' for aeson-pretty-0.8.2...
+[1 of 2] Compiling Paths_aeson_pretty ( .stack-work\dist\5f9bc736\build\autogen\Paths_aeson_pretty.hs, .stack-work\dist\5f9bc736\build\aeson-pretty\aeson-pretty-tmp\Paths_aeson_pretty.o )
+[2 of 2] Compiling Main             ( cli-tool\Main.hs, .stack-work\dist\5f9bc736\build\aeson-pretty\aeson-pretty-tmp\Main.o )
+Linking .stack-work\dist\5f9bc736\build\aeson-pretty\aeson-pretty.exe ...
+Installing library in
+C:\sr\snapshots\9b49e9f1\lib\i386-windows-ghc-8.0.2\aeson-pretty-0.8.2-H6AF9Sa38dQExqtNC6Pi83
+Installing executable(s) in C:\sr\snapshots\9b49e9f1\bin
+Registering aeson-pretty-0.8.2...

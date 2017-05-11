@@ -1,0 +1,84 @@
+
+==================== FINAL INTERFACE ====================
+2017-05-06 19:13:17.8812182 UTC
+
+interface main@main:Logic 8002
+  interface hash: d30d6a2781c16654dc4a7af4b22ea69e
+  ABI hash: 85a7930e5a597fe7ca66be1e6e69abeb
+  export-list hash: 3c52e2a32c4771fb8e4b094b0215e36c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: eb20f3bc754cf3fc7e68e58e43146da9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Logic.getCoords
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable f278f397e231b762745df8be7fa3fba0
+import  -/  base-4.9.1.0:Data.List 39cacd33831beddf077ed5332bde1fb8
+import  -/  base-4.9.1.0:GHC.Base 4a7174aeb1d26de3692e87167a590d53
+import  -/  base-4.9.1.0:GHC.Float a3d26d902d838cb6879a8549796d9c53
+import  -/  base-4.9.1.0:GHC.Num f01872b6786e7d0baa05d24fcf5ea0d4
+import  -/  base-4.9.1.0:GHC.Real f276577d97a090e143c8314d8ee94441
+import  -/  base-4.9.1.0:Prelude c40e02b79760ece4e7a83d1e0bae447f
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 1a78f3e0bf56c661747b22b91e8b2976
+ca6564237fa0081dd05fb2c7d5fe07ca
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Logic.$trModule2 Logic.$trModule1) -}
+35bdf61d5231cfb6344058c93d09cda1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Logic"#) -}
+06e77711d77f96dcf7572f74409c4ee9
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+2983e1530c752c04c852a511744a6721
+  big :: [GHC.Types.Float] -> GHC.Types.Float -> [GHC.Types.Float]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U(U)> -}
+d2dd6f01ff3d94244ce9b6d7f7d1318f
+  getCoords ::
+    [GHC.Types.Float] -> [(GHC.Types.Float, GHC.Types.Float)]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (numbs :: [GHC.Types.Float]) ->
+                 Logic.getCoords'
+                   (Logic.small (Logic.big numbs Logic.getCoords2) Logic.getCoords2)
+                   (case GHC.List.$wlenAcc
+                           @ GHC.Types.Float
+                           numbs
+                           0# of ww2 { DEFAULT ->
+                    GHC.Types.I# ww2 })
+                   Logic.getCoords1) -}
+9f1e7097a35229b86c2ca0a9045f5f3d
+  getCoords' ::
+    [GHC.Types.Float]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> [(GHC.Types.Float, GHC.Types.Float)]
+  {- Arity: 3, Strictness: <S,1*U><L,U(U)><L,U(U)> -}
+705a60773ef37492a840a028968a318b
+  getCoords1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+f85881f035a68ff660ed56fe8e2befd7
+  getCoords2 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 1.0#) -}
+750cacf6f6b0e07724af3a24fcff7450
+  small :: [GHC.Types.Float] -> GHC.Types.Float -> [GHC.Types.Float]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U(U)> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

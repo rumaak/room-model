@@ -1,0 +1,26 @@
+Configuring vault-0.3.0.6...
+Building vault-0.3.0.6...
+Preprocessing library vault-0.3.0.6...
+[1 of 5] Compiling Data.Unique.Really ( src\Data\Unique\Really.hs, .stack-work\dist\5f9bc736\build\Data\Unique\Really.o )
+
+src\Data\Unique\Really.hs:6:1: warning: [-Wunused-imports]
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+[2 of 5] Compiling Data.Vault.ST.Lazy ( src\Data\Vault\ST\Lazy.hs, .stack-work\dist\5f9bc736\build\Data\Vault\ST\Lazy.o )
+
+src\Data\Vault\ST\ST.hs:17:1: warning: [-Wunused-imports]
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+[3 of 5] Compiling Data.Vault.Lazy  ( src\Data\Vault\Lazy.hs, .stack-work\dist\5f9bc736\build\Data\Vault\Lazy.o )
+[4 of 5] Compiling Data.Vault.ST.Strict ( src\Data\Vault\ST\Strict.hs, .stack-work\dist\5f9bc736\build\Data\Vault\ST\Strict.o )
+
+src\Data\Vault\ST\ST.hs:17:1: warning: [-Wunused-imports]
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+[5 of 5] Compiling Data.Vault.Strict ( src\Data\Vault\Strict.hs, .stack-work\dist\5f9bc736\build\Data\Vault\Strict.o )
+Installing library in
+C:\sr\snapshots\9b49e9f1\lib\i386-windows-ghc-8.0.2\vault-0.3.0.6-1vXP2sqILbxIC44bzfQYGg
+Registering vault-0.3.0.6...

@@ -1,0 +1,87 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-28 15:12:22.3527949 UTC
+
+interface main@main:Help 8002
+  interface hash: 9e64fffa2d64b6e2069d34d92f01aeb0
+  ABI hash: 590c2ad1769646d44adb9cf185e6c401
+  export-list hash: 5f244456f9fbab8e19760e19957ed269
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: eb20f3bc754cf3fc7e68e58e43146da9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Help.round'
+  Help.tupleMap
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Num f01872b6786e7d0baa05d24fcf5ea0d4
+import  -/  base-4.9.1.0:GHC.Real f276577d97a090e143c8314d8ee94441
+import  -/  base-4.9.1.0:Prelude c40e02b79760ece4e7a83d1e0bae447f
+709580e5c9e9093818d71c54e7d3952d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Help.$trModule2 Help.$trModule1) -}
+36e3981ea07f485f8491e28152877ffb
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Help"#) -}
+a2aa816eddbde17f871564419ac29d35
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+f6bfc9a3f2a82754463f636b56f53e10
+  $wround' :: GHC.Prim.Float# -> GHC.Prim.Float#
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Float#) ->
+                 case {__pkg_ccall base-4.9.1.0 rintFloat GHC.Prim.Float#
+                                                          -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                          -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                GHC.Prim.Float# #)}
+                        (GHC.Prim.timesFloat# ww 10000.0#)
+                        GHC.Prim.realWorld# of wild { (#,#) ds3 ds4 ->
+                 case GHC.Prim.decodeFloat_Int# ds4 of ds { (#,#) ipv ipv1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ipv1 0#) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Integer.Type.doubleFromInteger
+                             (GHC.Integer.Type.shiftLInteger
+                                (GHC.Integer.Type.smallInteger ipv)
+                                ipv1) of wild2 { DEFAULT ->
+                      GHC.Prim.divideFloat# (GHC.Prim.double2Float# wild2) 10000.0# }
+                   GHC.Types.True
+                   -> GHC.Prim.divideFloat#
+                        (GHC.Prim.double2Float#
+                           (GHC.Prim.int2Double#
+                              (GHC.Prim.uncheckedIShiftRA# ipv (GHC.Prim.negateInt# ipv1))))
+                        10000.0# } } }) -}
+60fdef41b25e9fc492b2bdbe29834507
+  round' :: GHC.Types.Float -> GHC.Types.Float
+  {- Arity: 1, Strictness: <S(S),1*U(U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Float) ->
+                 case w of ww { GHC.Types.F# ww1 ->
+                 case Help.$wround' ww1 of ww2 { DEFAULT -> GHC.Types.F# ww2 } }) -}
+ad1cb69423ffb8b79fd51238102362ef
+  tupleMap :: (a -> b) -> (a, a) -> (b, b)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (f :: a -> b) (ds :: (a, a)) ->
+                 case ds of wild { (,) a1 a2 -> (f a1, f a2) }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

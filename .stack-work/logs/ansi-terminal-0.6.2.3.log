@@ -1,0 +1,24 @@
+Configuring ansi-terminal-0.6.2.3...
+Building ansi-terminal-0.6.2.3...
+Preprocessing library ansi-terminal-0.6.2.3...
+[1 of 6] Compiling System.Console.ANSI.Windows.Foreign ( System\Console\ANSI\Windows\Foreign.hs, .stack-work\dist\5f9bc736\build\System\Console\ANSI\Windows\Foreign.o )
+[2 of 6] Compiling System.Console.ANSI.Common ( System\Console\ANSI\Common.hs, .stack-work\dist\5f9bc736\build\System\Console\ANSI\Common.o )
+[3 of 6] Compiling System.Console.ANSI.Unix ( System\Console\ANSI\Unix.hs, .stack-work\dist\5f9bc736\build\System\Console\ANSI\Unix.o )
+[4 of 6] Compiling System.Console.ANSI.Windows.Emulator ( System\Console\ANSI\Windows\Emulator.hs, .stack-work\dist\5f9bc736\build\System\Console\ANSI\Windows\Emulator.o )
+
+System\Console\ANSI\Windows\Emulator.hs:103:5: warning: [-Wunused-do-bind]
+    A do-notation statement discarded a result of type `DWORD'
+    Suppress this warning by saying
+      `_ <- fillConsoleOutputCharacter
+              handle clearChar fill_length fill_cursor_pos'
+
+System\Console\ANSI\Windows\Emulator.hs:104:5: warning: [-Wunused-do-bind]
+    A do-notation statement discarded a result of type `DWORD'
+    Suppress this warning by saying
+      `_ <- fillConsoleOutputAttribute
+              handle clearAttribute fill_length fill_cursor_pos'
+[5 of 6] Compiling System.Console.ANSI.Windows ( System\Console\ANSI\Windows.hs, .stack-work\dist\5f9bc736\build\System\Console\ANSI\Windows.o )
+[6 of 6] Compiling System.Console.ANSI ( System\Console\ANSI.hs, .stack-work\dist\5f9bc736\build\System\Console\ANSI.o )
+Installing library in
+C:\sr\snapshots\9b49e9f1\lib\i386-windows-ghc-8.0.2\ansi-terminal-0.6.2.3-Az560Cs0ObY6ZODYjxtBiR
+Registering ansi-terminal-0.6.2.3...

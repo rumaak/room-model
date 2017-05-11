@@ -1,0 +1,20 @@
+Configuring easy-file-0.2.1...
+Building easy-file-0.2.1...
+Preprocessing library easy-file-0.2.1...
+[1 of 4] Compiling System.EasyFile.Missing ( System\EasyFile\Missing.hs, .stack-work\dist\5f9bc736\build\System\EasyFile\Missing.o )
+
+System\EasyFile\Missing.hs:7:1: warning: [-Wunused-imports]
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+[2 of 4] Compiling System.EasyFile.FilePath ( System\EasyFile\FilePath.hs, .stack-work\dist\5f9bc736\build\System\EasyFile\FilePath.o )
+[3 of 4] Compiling System.EasyFile.Directory ( System\EasyFile\Directory.hs, .stack-work\dist\5f9bc736\build\System\EasyFile\Directory.o )
+
+System\EasyFile\Directory.hs:37:1: warning: [-Wunused-imports]
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+[4 of 4] Compiling System.EasyFile  ( System\EasyFile.hs, .stack-work\dist\5f9bc736\build\System\EasyFile.o )
+Installing library in
+C:\sr\snapshots\9b49e9f1\lib\i386-windows-ghc-8.0.2\easy-file-0.2.1-5ig8rCGsBnD1LYczMQvq1o
+Registering easy-file-0.2.1...

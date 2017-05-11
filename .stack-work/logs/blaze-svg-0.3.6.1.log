@@ -1,0 +1,14 @@
+Configuring blaze-svg-0.3.6.1...
+Building blaze-svg-0.3.6.1...
+Preprocessing library blaze-svg-0.3.6.1...
+[1 of 8] Compiling Text.Blaze.Svg11.Attributes ( src\Text\Blaze\Svg11\Attributes.hs, .stack-work\dist\5f9bc736\build\Text\Blaze\Svg11\Attributes.o )
+[2 of 8] Compiling Text.Blaze.Svg.Renderer.Utf8 ( src\Text\Blaze\Svg\Renderer\Utf8.hs, .stack-work\dist\5f9bc736\build\Text\Blaze\Svg\Renderer\Utf8.o )
+[3 of 8] Compiling Text.Blaze.Svg.Renderer.Text ( src\Text\Blaze\Svg\Renderer\Text.hs, .stack-work\dist\5f9bc736\build\Text\Blaze\Svg\Renderer\Text.o )
+[4 of 8] Compiling Text.Blaze.Svg.Renderer.String ( src\Text\Blaze\Svg\Renderer\String.hs, .stack-work\dist\5f9bc736\build\Text\Blaze\Svg\Renderer\String.o )
+[5 of 8] Compiling Text.Blaze.Svg.Renderer.Pretty ( src\Text\Blaze\Svg\Renderer\Pretty.hs, .stack-work\dist\5f9bc736\build\Text\Blaze\Svg\Renderer\Pretty.o )
+[6 of 8] Compiling Text.Blaze.Svg.Internal ( src\Text\Blaze\Svg\Internal.hs, .stack-work\dist\5f9bc736\build\Text\Blaze\Svg\Internal.o )
+[7 of 8] Compiling Text.Blaze.Svg   ( src\Text\Blaze\Svg.hs, .stack-work\dist\5f9bc736\build\Text\Blaze\Svg.o )
+[8 of 8] Compiling Text.Blaze.Svg11 ( src\Text\Blaze\Svg11.hs, .stack-work\dist\5f9bc736\build\Text\Blaze\Svg11.o )
+Installing library in
+C:\sr\snapshots\9b49e9f1\lib\i386-windows-ghc-8.0.2\blaze-svg-0.3.6.1-1ShFTZ3k1YAGqqn0ZvA87r
+Registering blaze-svg-0.3.6.1...
