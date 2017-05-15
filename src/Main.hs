@@ -23,20 +23,27 @@ import Text.Read
 main :: IO ()
 main = scotty 80 $ do 
 
-  	W.get "/" $ do
-  		setHeader "Content-Type" "text/html"
-  		file "./html/page.html"
+	W.get "/" $ do
+	  	setHeader "Content-Type" "text/html"
+	  	file "./html/page.html"
 
   	post "/" $ do 
+  		spins <- (param "spins") `rescue` (\msg -> next)
   		input <- files
   		html $ renderHtml 
   		     $ H.html $ do
   		     	H.body $ do
   		     		H.p "Result:"
-  		     		procc input 		
+  		     		procc input spins		
 
-procc :: [W.File] -> Svg
-procc input = svgPic . textValue . TL.toStrict . toText . getCoords . handle . makeNumbs . fromFile $ input
+  	post "/" $ do 
+  		html $ renderHtml 
+  		     $ H.html $ do
+  		     	H.body $ do
+  		     		H.p "Missing number of spins!"
+
+procc :: [W.File] -> Float -> Svg
+procc input spin = svgPic . textValue . TL.toStrict . toText . getCoords (handle . makeNumbs . fromFile $ input) $ spin
 
 fromFile :: [W.File] -> [TL.Text]
 fromFile input = TL.lines (EN.decodeUtf8 (fileContent (snd (head input))))

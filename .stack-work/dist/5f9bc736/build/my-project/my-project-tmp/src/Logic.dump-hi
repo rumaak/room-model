@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-05-06 19:13:17.8812182 UTC
+2017-05-15 17:07:50.7638991 UTC
 
 interface main@main:Logic 8002
-  interface hash: d30d6a2781c16654dc4a7af4b22ea69e
-  ABI hash: 85a7930e5a597fe7ca66be1e6e69abeb
+  interface hash: 5c45b72b840aabe1ab526db618ada7ec
+  ABI hash: 0aa61adc993de7154d1c45c7cf7d6278
   export-list hash: 3c52e2a32c4771fb8e4b094b0215e36c
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: eb20f3bc754cf3fc7e68e58e43146da9
@@ -45,11 +45,13 @@ ca6564237fa0081dd05fb2c7d5fe07ca
 2983e1530c752c04c852a511744a6721
   big :: [GHC.Types.Float] -> GHC.Types.Float -> [GHC.Types.Float]
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U(U)> -}
-d2dd6f01ff3d94244ce9b6d7f7d1318f
+bf409b40e6fd1ccb9873454542843a19
   getCoords ::
-    [GHC.Types.Float] -> [(GHC.Types.Float, GHC.Types.Float)]
-  {- Arity: 1, Strictness: <S,U>,
-     Unfolding: (\ (numbs :: [GHC.Types.Float]) ->
+    [GHC.Types.Float]
+    -> GHC.Types.Float -> [(GHC.Types.Float, GHC.Types.Float)]
+  {- Arity: 2, Strictness: <S,U><L,1*U(U)>,
+     Unfolding: (\ (numbs :: [GHC.Types.Float])
+                   (spin :: GHC.Types.Float) ->
                  Logic.getCoords'
                    (Logic.small (Logic.big numbs Logic.getCoords2) Logic.getCoords2)
                    (case GHC.List.$wlenAcc
@@ -57,14 +59,17 @@ d2dd6f01ff3d94244ce9b6d7f7d1318f
                            numbs
                            0# of ww2 { DEFAULT ->
                     GHC.Types.I# ww2 })
+                   (case spin of wild1 { GHC.Types.F# y ->
+                    GHC.Types.F# (GHC.Prim.timesFloat# 6.2831855# y) })
                    Logic.getCoords1) -}
-9f1e7097a35229b86c2ca0a9045f5f3d
+5439af331540d0680fc42a251a80330f
   getCoords' ::
     [GHC.Types.Float]
     -> GHC.Types.Int
+    -> GHC.Types.Float
     -> GHC.Types.Int
     -> [(GHC.Types.Float, GHC.Types.Float)]
-  {- Arity: 3, Strictness: <S,1*U><L,U(U)><L,U(U)> -}
+  {- Arity: 4, Strictness: <S,1*U><L,U(U)><L,U(U)><L,U(U)> -}
 705a60773ef37492a840a028968a318b
   getCoords1 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}

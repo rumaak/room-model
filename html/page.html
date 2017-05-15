@@ -6,8 +6,10 @@
 <body>
 	<form method="post" enctype="multipart/form-data">
 		Select file:
-		<input type="file" accept="text/plain" name="input"></br>
+		<input type="file" accept="text/plain" name="inputFile"></br>
+		Number of spins: <input type="number" name="spins" min="1" max="256" step="1"></br>
 		<button type="submit" name="upload">Send file</button>
 	</form>
+	<p>For further information about this project, visit https://github.com/rumaak/room-model</p>
 </body>
 </html>
